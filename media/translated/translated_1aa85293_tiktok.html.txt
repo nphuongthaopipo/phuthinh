@@ -1,0 +1,44 @@
+Mục này cung cấp dịch thuật từ tiếng Anh sang tiếng Việt cho văn bản được cung cấp.  Do bản chất là mã HTML, việc dịch thuật tập trung vào nội dung văn bản thay vì cấu trúc HTML.
+
+
+**Tiêu đề:** Nạp Xu
+
+**Nội dung:**
+
+Xem lịch sử giao dịch
+
+[Hình ảnh hồ sơ người dùng: johnh.bryan]  Số dư: 0 xu
+
+**Nạp thêm xu** : Tiết kiệm đến 24% so với mua trong ứng dụng [Biểu tượng cảm thán]
+
+**Gói xu:**
+
+* 70 Xu:  £ 0.75
+* 350 Xu: £ 3.75
+* 700 Xu: £ 7.45
+* 1,400 Xu: £ 14.85
+* 3,500 Xu: £ 36.99
+* 7,000 Xu: £ 74.29
+* 17,500 Xu: £ 185.69
+* Tùy chỉnh: Hỗ trợ số lượng lớn
+
+
+**Phương thức thanh toán:**
+
+* Visa
+* Mastercard
+* American Express
+* DINERS
+* JCB
+* PAYPAL
+* VENMO
+
+**Tổng cộng:** £ 0.75
+
+**Nút:** Nạp thêm
+
+
+[Biểu tượng dấu hỏi: Câu hỏi thường gặp]
+
+
+**Lưu ý:**  Các biểu tượng (SVG) không được dịch.  Vị trí và định dạng của văn bản trong HTML gốc có thể khác so với kết quả dịch.

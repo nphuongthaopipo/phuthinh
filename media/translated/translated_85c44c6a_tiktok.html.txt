@@ -1,0 +1,12 @@
+This is a TikTok coin purchase interface.  The user, johnh.bryan, currently has 0 coins.  They can view their transaction history.  The main section offers several coin packages for purchase:
+
+* 70 Coins for £0.75
+* 350 Coins for £3.75
+* 700 Coins for £7.45
+* 1,400 Coins for £14.85
+* 3,500 Coins for £36.99
+* 7,000 Coins for £74.29
+* 17,500 Coins for £185.69
+* A custom option for larger amounts.
+
+A message indicates that purchasing coins through this method can save up to 24% compared to in-app purchases.  Supported payment methods include Visa, Mastercard, American Express, Diners Club, JCB, PayPal, and Venmo.  The current total is £0.75.  A "Recharge" button completes the purchase.  A FAQ button is also available.

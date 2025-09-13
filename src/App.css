@@ -1,0 +1,13 @@
+/*
+  File App.css giờ đây sẽ chỉ chứa các style global nhất,
+  vì layout chính đã được xử lý bởi Layout.css và Sidebar.css.
+  Chúng ta xóa bỏ các style cũ cho .App-header, .App-footer.
+*/
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f3f4f6; /* Thêm màu nền chung cho body */
+}
+

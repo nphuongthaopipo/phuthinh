@@ -1,0 +1,177 @@
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background-color: #0f43b7; /* Màu xanh lam đậm */
+    color: #e5e7eb; /* Màu chữ sáng */
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar.closed {
+    width: 80px;
+}
+
+/* Header */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar.closed .sidebar-header {
+    justify-content: center;
+    padding: 1.5rem 0.5rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-left: 0.5rem;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #e5e7eb;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.toggle-btn:hover {
+    background-color: #1a57ca; /* Xanh lam nhạt hơn khi hover */
+}
+
+/* Menu List */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1rem 1.5rem;
+    color: #e5e7eb;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* Style for active and hover states */
+.menu-item a.active {
+    background-color: #1a57ca;
+    color: #ffffff;
+    border-left: 4px solid #ffffff; /* Màu trắng cho border active */
+    padding-left: calc(1.5rem - 4px);
+}
+
+.menu-item a:hover:not(.active) {
+    background-color: #1a57ca;
+    color: #ffffff;
+}
+
+/* Menu icons */
+.menu-item .icon {
+    width: 24px;
+    height: 24px;
+    color: inherit; /* Kế thừa màu từ a */
+}
+
+/* Menu name */
+.menu-name {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Closed Sidebar State */
+.sidebar.closed .menu-name,
+.sidebar.closed .arrow {
+    display: none;
+}
+
+.sidebar.closed .menu-item a {
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.sidebar.closed .menu-item a:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4b5563;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    z-index: 1100;
+    white-space: nowrap;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Sub-menu */
+.sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1a57ca; /* Màu nền cho sub-menu */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.sub-menu.open {
+    max-height: 500px;
+}
+
+.sub-menu li a {
+    padding: 0.75rem 1.5rem 0.75rem 3.5rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-left: none;
+    color: #e5e7eb;
+}
+
+.sub-menu li a:hover {
+    background-color: #3b82f6; /* Xanh lam nhạt hơn khi hover sub-menu */
+}
+
+.sub-menu li a.active {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border-left: 4px solid #ffffff;
+    padding-left: calc(3.5rem - 4px);
+}
+
+/* Arrow for sub-menu */
+.arrow {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
